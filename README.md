@@ -11,8 +11,17 @@ Moving beyond the "script kiddie" mindset to understand the deep engineering beh
 * **Vulnerabilities:** SQL Injection (Current), Authentication, and Access Control.
 
 ### 🛠️ Projects & Writeups
-* [Writeup #1: SQL Injection Lab Name] - (Link to folder)
-* [Secure Coding Example #1: How to prevent XSS] - (Link to folder)
+* [Lab #1: SQL injection in WHERE clause] - Done ✅
+* [Secure Coding Example #1: How to prevent XSS] - Done ✅
+### 🛡️ Practical Security Research (PortSwigger Academy)
+
+#### 🧪 Lab #1: SQL injection in WHERE clause (Retrieving hidden data)
+* **Status:** `Solved ✅`
+* **Vulnerability Type:** SQL Injection (SQLi).
+* **Back-end Logic Analysis:** The application filters products using a SQL query similar to: 
+    `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
+* **Exploitation Technique:** By leveraging my **Back-end knowledge**, I injected a comment indicator `--` to terminate the query early, effectively bypassing the `AND released = 1` condition.
+* **Outcome:** Successfully retrieved unreleased products, proving the impact of improper input sanitization. 
 
 ---
 "Don't just find the bug, explain the fix."
