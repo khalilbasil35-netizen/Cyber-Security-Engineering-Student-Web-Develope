@@ -22,6 +22,19 @@ Moving beyond the "script kiddie" mindset to understand the deep engineering beh
     `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
 * **Exploitation Technique:** By leveraging my **Back-end knowledge**, I injected a comment indicator `--` to terminate the query early, effectively bypassing the `AND released = 1` condition.
 * **Outcome:** Successfully retrieved unreleased products, proving the impact of improper input sanitization. 
+🧪 Lab #2: SQL injection vulnerability allowing login bypass
+Status: Solved ✅
 
+Vulnerability Type: Authentication Bypass via SQLi.
+
+The "Back-end" Logic: * The application's login query was likely: SELECT * FROM users WHERE username = '$username' AND password = '$password'
+
+My Exploit Strategy: * I injected administrator'-- into the username field.
+
+How it works: The ' closed the username string, and the -- commented out the rest of the SQL query, including the password check.
+
+This forced the database to return the administrator record without needing a password.
+
+Key Learning: Understanding how the back-end constructs queries is the key to breaking
 ---
 "Don't just find the bug, explain the fix."
