@@ -21,7 +21,8 @@ Moving beyond the "script kiddie" mindset to understand the deep engineering beh
 * **Back-end Logic Analysis:** The application filters products using a SQL query similar to: 
     `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
 * **Exploitation Technique:** By leveraging my **Back-end knowledge**, I injected a comment indicator `--` to terminate the query early, effectively bypassing the `AND released = 1` condition.
-* **Outcome:** Successfully retrieved unreleased products, proving the impact of improper input sanitization. 
+* **Outcome:** Successfully retrieved unreleased products, proving the impact of improper input sanitization.
+*  
 🧪 Lab #2: SQL injection vulnerability allowing login bypass
 Status: Solved ✅
 
@@ -36,5 +37,4 @@ How it works: The ' closed the username string, and the -- commented out the res
 This forced the database to return the administrator record without needing a password.
 
 Key Learning: Understanding how the back-end constructs queries is the key to breaking
----
 "Don't just find the bug, explain the fix."
