@@ -1,40 +1,38 @@
-# 🚀 My Cyber Security Journey
+# 🛡️ Khalil B. Kwaik | Future Security Architect
 
-Welcome to my security research lab! I am a **1st Year Cyber Security Engineering Student** with a background in **Front-end & Back-end Development**. 
+Welcome to my digital lab! I’m a **1st Year Cyber Security Engineering Student** navigating a unique academic path, balancing my studies at both **UCAS** and **GTC**. I believe that engineering is not just about writing code; it's about building fortresses and understanding the "how" behind every vulnerability.
 
-### 🎯 My Goal
-Moving beyond the "script kiddie" mindset to understand the deep engineering behind web vulnerabilities and how to build secure-by-design systems.
+---
 
-### 🛡️ Current Focus
-* **Platform:** PortSwigger Web Security Academy.
-* **Tools:** Burp Suite Professional/Community.
-* **Vulnerabilities:** SQL Injection (Current), Authentication, and Access Control.
+## 🎓 The Dual-Journey (UCAS & GTC)
+I am currently pursuing a intensive academic and technical curriculum:
+*   **UCAS:** Diving into Engineering theories and **1st Year Advanced Logic** in **Java 2** & **C#**.
+*   **GTC:** Strengthening hands-on technical skills in **Networking Fundamentals** and **Web Technologies**.
 
-### 🛠️ Projects & Writeups
-* [Lab #1: SQL injection in WHERE clause] - Done ✅
-* [Secure Coding Example #1: How to prevent XSS] - Done ✅
-### 🛡️ Practical Security Research (PortSwigger Academy)
+## 🛠️ Current Tech Arsenal (Year 1 Foundations)
+*   **Programming:** **1st Year Learner** in Java 2 (Advanced Logic) and C# (System Logic).
+*   **Databases:** **Starting my journey** in Database Design and SQL (Midterm project completed).
+*   **Web Engineering:** Crafting clean layouts with **CSS Grid** (strictly maintaining clean code structure without `!important` shortcuts).
+*   **Networking:** Exploring the OSI layers, TCP/IP, and secure network topologies (Started May 2026).
+*   **Security Research:** 
+    *   **Focus:** SQL Injection, Authentication, and Access Control.
+    *   **Platforms:** Deep-diving into **PortSwigger Academy**.
+    *   **Tools:** Burp Suite Professional/Community.
 
-#### 🧪 Lab #1: SQL injection in WHERE clause (Retrieving hidden data)
-* **Status:** `Solved ✅`
-* **Vulnerability Type:** SQL Injection (SQLi).
-* **Back-end Logic Analysis:** The application filters products using a SQL query similar to: 
-    `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
-* **Exploitation Technique:** By leveraging my **Back-end knowledge**, I injected a comment indicator `--` to terminate the query early, effectively bypassing the `AND released = 1` condition.
-* **Outcome:** Successfully retrieved unreleased products, proving the impact of improper input sanitization.
-*  
-🧪 Lab #2: SQL injection vulnerability allowing login bypass
-Status: Solved ✅
+## 🚀 Projects & Progress
+### 💻 Programming & Database Logic
+*   **Address Book System (Java):** My first full CRUD application demonstrating structured OOP concepts.
+*   **Car Rental Engine (SQL/Logic):** A 1st-year Midterm project focused on robust database structure and reliable code.
 
-Vulnerability Type: Authentication Bypass via SQLi.
+### 🌐 Networking & Web Labs
+*   **Net-Lab Series:** Documentation of my first steps through networking basics.
+*   **Modern Web Layouts:** Engineering responsive web pages with a focus on structural integrity.
 
-The "Back-end" Logic: * The application's login query was likely: SELECT * FROM users WHERE username = '$username' AND password = '$password'
+### 🛡️ Security Writeups
+*   **Vulnerability Analysis:** I document my solutions for PortSwigger labs (like SQL Injection in WHERE clauses) to move beyond the "script kiddie" mindset.
 
-My Exploit Strategy: * I injected administrator'-- into the username field.
+---
 
-How it works: The ' closed the username string, and the -- commented out the rest of the SQL query, including the password check.
+> "I don't just find bugs; I study the architecture that allowed them to exist." 
 
-This forced the database to return the administrator record without needing a password.
-
-Key Learning: Understanding how the back-end constructs queries is the key to breaking
-"Don't just find the bug, explain the fix."
+---
